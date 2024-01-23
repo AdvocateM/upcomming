@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.comming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 3rem;
+}
+
+.mrmaroga {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    animation: jumpText 1s infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+.mrmaroga:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.mrmaroga:active {
+    transform: scale(0);
+}
+
+/* Media Query for Smaller Screens (e.g., smaller phones) */
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .day, .hour, .minute, .second {
+        font-size: 2rem;
+    }
+}
